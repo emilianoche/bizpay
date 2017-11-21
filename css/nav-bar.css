@@ -31,9 +31,19 @@ header {
 .user-config {
     float: right;
     font-weight:bold;
+    font-size: 13px;
+}
+
+.user-config a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .commit-payroll {
+    float: left;
     border: 4px;
     background: #edad2f;
     font-size: 14px;
@@ -50,6 +60,10 @@ header {
 .commit-payroll a {
     padding: 4px;
     font-weight:bold;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
 }
 
 #wrapper {
