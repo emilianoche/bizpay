@@ -1,0 +1,81 @@
+.title-bar {
+    background-color: #F7FAFC;
+    height: 60px;
+    text-align: center;
+}
+
+.title {
+    font-size: 14.4px;
+}
+
+.title-container {
+    position: absolute;
+    top: 4.7%;
+    left: 3%;
+    border-style: solid;
+    border-top: #012351;
+    border-left: #012351;
+    border-color: #012351;
+    border-right: #012351;
+}
+
+.btn-circle-sm {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding: 2px 0;
+    font-size: 20px;
+    line-height: 1.65;
+    border-radius: 30px !important;
+    position: fixed;
+    top: 2%;
+    right: 2%;
+}
+
+.form-colums {
+    top:20;
+}
+
+.form-label {
+    left: 20px;
+}
+
+.hidden-top {
+    border-top:hidden;
+}
+
+.btn-add-member {
+    float: left;
+    border: 4px;
+    background: #ffffff;
+    font-size: 10px;
+    width: 205px !important;
+    border-radius: 25px !important;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.75);
+    top: 9px;
+    right: 49px;
+    bottom: 66px;
+    left: 27px;
+    position: static;
+}
+
+.botton-row {
+    width: 19px;
+}
+
+.span-add-member {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+td {
+    width: 229px;
+}
+
+.member-bold {
+    font-weight: bold;
+}
+
+.id-bold {
+    font-weight: bold;
+}
