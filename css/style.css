@@ -168,14 +168,14 @@ header {
   }
 }
 
-.subtituleBar {
+.subtitle-bar {
     font-size: 11px;
 position: absolute;
     top: 20px;
     left: 20px;
 }
 
-.subTitleiconBar {
+.subtitle-icon-bar {
     position: absolute;
     top: 20px;
     left: 209px;
