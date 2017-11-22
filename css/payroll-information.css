@@ -9,14 +9,15 @@
 }
 
 .title-container {
-    position: absolute;
-    top: 4.7%;
+    position: sticky;
+    top: 16.7%;
     left: 3%;
+    width: 139px;
     border-style: solid;
     border-top: #012351;
     border-left: #012351;
-    border-color: #012351;
     border-right: #012351;
+    float: left;
 }
 
 .btn-circle-sm {
