@@ -88,10 +88,11 @@ width: 33px;
     margin-top:50px;
 }
 
-.date-closure {
-    left: 4.3%;
-    top: -15%;
-}
+@media (min-width:400px) {
+    .date-closure {
+        left: 4.3%;
+        top: -15%;
+    }
 
 .icon-date-closure {
     position: absolute;
@@ -99,6 +100,23 @@ width: 33px;
     top: 20%;
 
 }
+}
+
+@media (max-width:400px) {
+    .date-mobile {
+        left: 4.3%;
+        top: -15%;
+        width: 188px !important;
+    }
+
+.icon-date-closure {
+    position: absolute;
+    left: 30%;
+    top: 20%;
+
+}
+}
+
 .menul {
     list-style-type: none;
     margin: 0;
