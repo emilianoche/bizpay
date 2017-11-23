@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="..\..\css\font-awesome-4.7.0\css\font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="..\..\css\payroll-data\payments-deductions.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
         crossorigin="anonymous">
@@ -30,11 +31,17 @@
         <div class="col form-colums">
             <div class="form-group row">
                 <div class="col-6">
-                    <select class="selectpicker" data-live-search="true">
-                        <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
-                        <option data-tokens="mustard">Burger, Shake and a Smile</option>
-                        <option data-tokens="frosting">Sugar, Spice and all things nice</option>
-                    </select>
+                    <div class="select-container">
+                        <select class="selectpicker select-letters" data-live-search="true">
+                            <option class=" select-letters" data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                            <option class=" select-letters" data-tokens="mustard">Burger, Shake and a Smile</option>    
+                            <option class=" select-letters" data-tokens="frosting">
+                                <button type="button" class="btn btn-add-member">
+                                    <span class="span-add-member"> + Add Payroll Entry</span>
+                                </button>
+                            </option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>
@@ -48,82 +55,123 @@
                     <th>Payroll Code</th>
                     <th>Amount</th>
                     <th>Rate</th>
-                    <th>Account No.</th> 
+                    <th>Account No.</th>
                     <th>Suspend</th>
-                    <th></th> 
+                    <th></th>
                     <th></th>
                 </tr>
             </thead>
             <tbody>
                 <tr class="row-button">
-                    <th scope="row" class="botton-row">
+                    <th scope="row" class="row-button">
                         <button type="button" class="btn btn-add-member">
                             <span class="span-add-member"> + Add Payroll Entry</span>
                         </button>
                     </th>
                 </tr>
                 <tr>
-                    <td >Standard Payments</td>
-                    <td >Basic Pay</td>
+                    <td>Standard Payments</td>
+                    <td>Basic Pay</td>
                     <td>3,500.00</td>
                     <td>-</td>
-                    <td >0123456789</td>
-                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                    <td class="icon-right"><i class="fa fa-pencil" aria-hidden="true"></i>  <i class="fa fa-trash" aria-hidden="true"></i></td>
+                    <td>0123456789</td>
+                    <td>
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </td>
+                    <td class="icon-right">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </td>
                 </tr>
                 <tr>
-                    <td >Standard Payments</td>
-                    <td >Basic Pay</td>
+                    <td>Standard Payments</td>
+                    <td>Basic Pay</td>
                     <td>5,000.00</td>
                     <td>-</td>
-                    <td >0123456789</td>
-                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                    <td class="icon-right"><i class="fa fa-pencil" aria-hidden="true"></i>  <i class="fa fa-trash" aria-hidden="true"></i></td>
+                    <td>0123456789</td>
+                    <td>
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </td>
+                    <td class="icon-right">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </td>
                 </tr>
                 <tr>
-                    <td >Non-Standard Payments</td>
-                    <td >Gym Membership</td>
+                    <td>Non-Standard Payments</td>
+                    <td>Gym Membership</td>
                     <td>4,5000.00</td>
                     <td>-</td>
-                    <td >0123456789</td>
-                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                    <td class="icon-right"><i class="fa fa-pencil" aria-hidden="true"></i>  <i class="fa fa-trash" aria-hidden="true"></i></td>
+                    <td>0123456789</td>
+                    <td>
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </td>
+                    <td class="icon-right">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </td>
                 </tr>
                 <tr>
-                    <td >Standard Payments</td>
-                    <td >Basic Pay</td>
+                    <td>Standard Payments</td>
+                    <td>Basic Pay</td>
                     <td>5,000.00</td>
                     <td>-</td>
-                    <td >0123456789</td>
-                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                    <td class="icon-right"><i class="fa fa-pencil" aria-hidden="true"></i>  <i class="fa fa-trash" aria-hidden="true"></i></td>
+                    <td>0123456789</td>
+                    <td>
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </td>
+                    <td class="icon-right">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </td>
                 </tr>
                 <tr>
-                    <td >Non-Standard Payments</td>
-                    <td >Gym Membership</td>
+                    <td>Non-Standard Payments</td>
+                    <td>Gym Membership</td>
                     <td>4,750.00</td>
                     <td>-</td>
-                    <td >0123456789</td>
-                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                    <td class="icon-right"><i class="fa fa-pencil" aria-hidden="true"></i>  <i class="fa fa-trash" aria-hidden="true"></i></td>
+                    <td>0123456789</td>
+                    <td>
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </td>
+                    <td class="icon-right">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </td>
                 </tr>
                 <tr>
-                    <td >Standard Payments</td>
-                    <td >Basic Pay</td>
+                    <td>Standard Payments</td>
+                    <td>Basic Pay</td>
                     <td>4,600.00</td>
                     <td>-</td>
-                    <td >0123456789</td>
-                    <td><i class="fa fa-check" aria-hidden="true"></i></td>
-                    <td class="icon-right"><i class="fa fa-pencil" aria-hidden="true"></i>  <i class="fa fa-trash" aria-hidden="true"></i></td>
+                    <td>0123456789</td>
+                    <td>
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </td>
+                    <td class="icon-right">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </td>
                 </tr>
                 <tr>
-                    <td >Standard Payments</td>
-                    <td >Basic Pay</td>
-                    <td class="input-amount"><input class="col-4 " type="text"></td>
-                    <td class="input-rate"><input class="col-2" type="text"></td>
-                    <td ><input class="col-6" type="text"></td>
-                    <td class="input-rate"><input class="col-2" type="text"></td>
-                    <td class="icon-right"><i class="fa fa-pencil" aria-hidden="true"></i>  <i class="fa fa-trash" aria-hidden="true"></i></td>
+                    <td>Standard Payments</td>
+                    <td>Basic Pay</td>
+                    <td class="input-amount">
+                        <input class="col-4 " type="text">
+                    </td>
+                    <td class="input-rate">
+                        <input class="col-2" type="text">
+                    </td>
+                    <td>
+                        <input class="col-6" type="text">
+                    </td>
+                    <td class="input-rate">
+                        <input class="col-2" type="text">
+                    </td>
+                    <td class="icon-right">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </td>
                 </tr>
             </tbody>
         </table>
@@ -135,5 +183,11 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
+    <script>
+        $('.selectpicker').selectpicker({
+            size: 5,
+            heig
+        });
+    </script>
 </body>

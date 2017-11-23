@@ -145,3 +145,16 @@ td {
 .icon-right {
     text-align: right;
 }
+
+.select-letters {
+    font-size: 14px;
+}
+
+.selectpicker {
+    font-size: 14px;
+}
+
+.select-container {
+    height: 20px;
+    width: 180px;
+}
