@@ -128,3 +128,20 @@ td {
         height: 37px;   
     }
 }
+
+.row-button {
+    background-color: white !important;
+}
+
+.input-amount {
+    padding-right: 13px !important;
+    padding-left: 12px !important;
+}
+
+.input-rate {
+    padding-left: 0px !important;
+}
+
+.icon-right {
+    text-align: right;
+}
