@@ -6,6 +6,7 @@
 
 .title {
     font-size: 13.4px;
+    height: 27px;
 }
 
 .title-container {
@@ -86,6 +87,12 @@ width: 33px;
 .form-colums-left {
     top:20;
     margin-top:50px;
+    left: 20px;
+}
+
+.data {
+    top:20;
+    margin-top:0;
 }
 
 @media (min-width:400px) {
@@ -102,16 +109,25 @@ width: 33px;
 }
 }
 
+.information {
+    background-color: #F7FAFC;
+    width: 100%;
+    border: 0px;
+    padding: 25px;
+    margin: 0px;
+}
+
 @media (max-width:400px) {
     .date-mobile {
-        left: 4.3%;
+        left: -6.7%;
         top: -15%;
-        width: 188px !important;
+        width: 151px !important;
+        margin-left: 56px;
     }
 
 .icon-date-closure {
     position: absolute;
-    left: 30%;
+    left: 76%;
     top: 20%;
 
 }
@@ -316,3 +332,4 @@ position: absolute;
 .fa-floppy-save {
     margin-left: -29%;
 }
+

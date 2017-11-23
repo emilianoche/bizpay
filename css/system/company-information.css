@@ -1,3 +1,130 @@
+.title-bar {
+    background-color: #F7FAFC;
+    height: 60px;
+    text-align: center;
+}
+
+.title {
+    font-size: 13.4px;
+    height: 27px;
+}
+
+.title-container {
+    position: sticky;
+    top: 16.7%;
+    left: 3%;
+    width: 139px;
+    border-style: solid;
+    border-top: #012351;
+    border-left: #012351;
+    border-right: #012351;
+    float: left;
+    margin-left: 2%;
+}
+
+.grades {
+    position: sticky;
+    top: 16.7%;
+    left: 23%;
+    width: 139px;
+    border-right: #012351;
+    float: left;
+    font-size: 14.4px;
+}
+
+.structure {
+    position: sticky;
+    top: 16.7%;
+    left: 13%;
+    width: 139px;
+    border-left: #012351;
+    float: left;
+    font-size: 14.4px;
+}
+
+
+.btn-circle-sm {
+width: 33px;
+    height: 30px;
+    text-align: center;
+    padding: 2px 0;
+    font-size: 20px;
+    line-height: 1.65;
+    border-radius: 21px !important;
+    position: fixed;
+    top: 10%;
+    right: 2%;
+}
+
+@media (max-width:1200px) {
+
+    .grades {
+        position: sticky;
+        top: 16.7%;
+        left: 26%;
+        width: 139px;
+        border-right: #012351;
+   	    float: left;
+        font-size: 14.4px;
+    }
+
+    .structure {
+        position: sticky;
+        top: 16.7%;
+        left: 15%;
+        width: 139px;
+        border-left: #012351;
+        float: left;
+        font-size: 14.4px;
+    }
+}
+
+.form-colums {
+    top:20;
+    left: 20px;
+}
+
+.form-colums-left {
+    top:20;
+    margin-top:50px;
+    left: 20px;
+}
+
+.data {
+    top:20;
+    margin-top:0;
+}
+
+@media (min-width:400px) {
+    .date-closure {
+        left: 4.3%;
+        top: -15%;
+    }
+
+.icon-date-closure {
+    position: absolute;
+    left: 30%;
+    top: 20%;
+
+}
+}
+
+@media (max-width:400px) {
+    .date-mobile {
+        left: -6.7%;
+        top: -15%;
+        width: 151px !important;
+        margin-left: 56px;
+    }
+
+.icon-date-closure {
+    position: absolute;
+    left: 76%;
+    top: 20%;
+
+}
+}
+
 .menul {
     list-style-type: none;
     margin: 0;
@@ -82,7 +209,6 @@ header {
   z-index: 1000;
   left: 250px;
   width: 0;
-  height: 100%;
   margin-left: -250px;
   overflow-y: auto;
   background: #1C4273;
@@ -193,4 +319,8 @@ position: absolute;
     position: absolute;
     top: 20px;
     left: 209px;
+}
+
+.fa-floppy-save {
+    margin-left: -29%;
 }
