@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="..\..\css\font-awesome-4.7.0\css\font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="..\..\css\system\payroll-information.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
@@ -80,7 +81,7 @@
             <tbody>
                 <tr>
                     <th scope="row" class="botton-row">
-                        <button type="button" class="btn btn-add-member">
+                        <button type="button" class="btn btn-add-member" data-toggle="modal" data-target="#myModal">
                             <span class="span-add-member"> + Add Member to Payroll</span>
                         </button>
                     </th>
@@ -137,4 +138,168 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-size" role="document">
+            <div class="modal-content modal-font">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create New Payroll Code - 1 of 1</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body modal-size">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label class="modal-label">Category</label>
+                            </div>
+                            <div class="col-md-4 col-md-offset-4">
+                                <select class="form-control modal-select">
+                                    <opcion>000012</opcion>
+                                    <opcion>000012</opcion>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label class="modal-label">Payroll Code</label>
+                            </div>
+                            <div class="col-md-4 col-md-offset-4">
+                                <input class="form-control modal-select" type="text">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label class="modal-label">Description</label>
+                            </div>
+                            <div class="col-md-4 col-md-offset-4">
+                                <input class="form-control modal-select" type="text">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label class="modal-label">Short Description</label>
+                            </div>
+                            <div class="col-md-4 col-md-offset-4">
+                                <input class="form-control modal-select" type="text">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label class="modal-label">Retro Payroll Code</label>
+                            </div>
+                            <div class="col-md-4 col-md-offset-4">
+                                <select class="form-control modal-select">
+                                    <opcion>000012</opcion>
+                                    <opcion>000012</opcion>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label class="modal-label">Calculation Method</label>
+                            </div>
+                            <div class="col-md-4 col-md-offset-4">
+                                <select class="form-control modal-select">
+                                    <opcion>000012</opcion>
+                                    <opcion>000012</opcion>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label class="modal-label">Basic Pay Content</label>
+                            </div>
+                            <div class="col-md-4 col-md-offset-4">
+                                <label class="container">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    No
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label class="modal-label">Rate</label>
+                            </div>
+                            <div class="col-md-4 col-md-offset-4">
+                                <input class="form-control modal-select" type="text">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label class="modal-label"></label>
+                            </div>
+                            <div class="col-md-4 col-md-offset-4 checkbox-label">
+                                <label class="container label-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Taxeable
+                                </label>
+                                <label class="container label-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Pensionable
+                                </label>
+                                <label class="container label-checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Overtime
+                                </label>
+                                <label class="container label-checkbox">
+                                    <input type="checkbox" value="">
+                                    <span class="checkmark"></span>
+                                    Retro
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label class="modal-label">Allow Invididual Employee Accounts</label>
+                            </div>
+                            <div class="col-md-4 col-md-offset-4">
+                                <div class="checkbox">
+                                    <label class="container label-checkbox">
+                                        <input type="checkbox" value="">
+                                        <span class="checkmark"></span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label class="modal-label">Calculation Method</label>
+                            </div>
+                            <div class="col-md-4 col-md-offset-4">
+                                <select class="form-control modal-select">
+                                    <opcion>000012</opcion>
+                                    <opcion>000012</opcion>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label class="modal-label">Suspend Status</label>
+                            </div>
+                            <div class="col-md-4 col-md-offset-4">
+                                <div class="checkbox">
+                                    <label class="container label-checkbox">
+                                        <input type="checkbox" value="">
+                                        <span class="checkmark"></span>
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-cancel" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
