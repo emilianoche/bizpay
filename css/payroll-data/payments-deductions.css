@@ -185,6 +185,7 @@ td {
     margin-top: 3px;
     margin-bottom: 6px;
 }
+
 .btn-cancel {
     position: static;
     margin-right: 70% !important;
@@ -194,6 +195,33 @@ td {
     color: #000000;
     height: 39px;
     width: 285 !important;
+}
+
+.btn-discard {
+    position: static;
+    margin-right: 50% !important;
+    border-radius: 25px !important;
+    border: 1px solid #012351 !important;
+    background-color: #ffffff;
+    color: #000000;
+    height: 39px;
+    width: 285 !important;
+}
+
+.btn-cancel-save {
+    position: static;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #012351 !important;
+    border-radius: 25px !important;
+    height: 39px;
+    width: 285 !important;
+}
+
+.modal-save-content {
+    font-size: 3px;
+    width: 95%;
+    text-align: center;
 }
 
 .btn-next {

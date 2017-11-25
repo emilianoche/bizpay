@@ -21,7 +21,7 @@
         <div class="title grades">
             <h3 class="title">Department</h3>
         </div>
-        <a class="btn btn-circle-sm btn-warning">
+        <a class="btn btn-circle-sm btn-warning" data-toggle="modal" data-target="#saveModal">
             <i class="fa fa-floppy-o fa-floppy-save"></i>
         </a>
 
@@ -456,4 +456,27 @@
             </div>
         </div>
     </div>
+
+    <!-- Save Modal -->
+    <div class="modal fade" id="saveModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-size" role="document">
+                <div class="modal-content modal-save-content">
+                    <div class="modal-body modal-size">
+                        <div class="container-fluid">
+                            <h5><strong>You are about to navigate from this page</strong></h5>
+                            <br>
+                            <br>
+                            <h6>Your change will be lost if you don't save them.</h6>
+                            <br>
+                            <h6>Click Discard Changes to <strong>navigate without saving.</strong></h6>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-discard" data-dismiss="modal">Discard Changes</button>
+                        <button type="button" class="btn btn-cancel-save ">Cancel</button>
+                        <button type="button" class="btn btn-next">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
