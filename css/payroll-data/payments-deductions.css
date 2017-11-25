@@ -139,7 +139,7 @@ td {
 }
 
 .input-rate {
-    padding-left: 0px !important;
+    padding-left: 10px !important;
 }
 
 .icon-right {
@@ -157,4 +157,8 @@ td {
 .select-container {
     height: 20px;
     width: 180px;
+}
+
+.table-head {
+    text-align: center;
 }

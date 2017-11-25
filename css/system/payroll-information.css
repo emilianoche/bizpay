@@ -85,6 +85,7 @@ td {
 .checkbox-label {
     display: flex;
     font-size: 11.7px;
+    margin-top: 11px;
 }
 
 .checkbox-label > label {
@@ -95,6 +96,7 @@ td {
 .modal-font {
     font-size: 14px;
     width: 123%;
+    text-align: center;
 }
 
 .modal-select {
@@ -104,7 +106,22 @@ td {
 }
 .btn-cancel {
     position: static;
-    margin-right: 55% !important;
+    margin-right: 70% !important;
+    border-radius: 25px !important;
+    border: 1px solid #012351 !important;
+    background-color: #ffffff;
+    color: #000000;
+    height: 39px;
+    width: 285 !important;
+}
+
+.btn-next {
+    position: static;
+    border-radius: 25px !important;
+    background-color: #012351;
+    color: #ffffff;
+    height: 39px;
+    width: 285 !important;
 }
 
 /* Customize the label (the container) */
@@ -183,3 +200,27 @@ td {
   .modal-label {
     margin-top: 7px;
   }
+  
+.modal {
+    overflow-y: auto !important;
+    
+}
+
+.icon-date {
+    width: 340% !important;
+    margin-top: 13px;
+}
+
+.input-date {
+    width: 148% !important;
+    margin-bottom: 4%;
+}
+
+.label-niscode {
+    margin-left: 26%;
+}
+
+.input-niscode {
+    width: 191% !important;
+    margin-bottom: 9%;
+}
