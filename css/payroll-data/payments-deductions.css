@@ -162,3 +162,146 @@ td {
 .table-head {
     text-align: center;
 }
+
+.checkbox-label {
+    display: flex;
+    font-size: 11.7px;
+    margin-top: 11px;
+}
+
+.checkbox-label > label {
+    margin-right: 5px;
+    margin-top: -3px;
+}
+
+.modal-font {
+    font-size: 14px;
+    width: 123%;
+    text-align: center;
+}
+
+.modal-select {
+    width: 256% !important;
+    margin-top: 3px;
+    margin-bottom: 6px;
+}
+.btn-cancel {
+    position: static;
+    margin-right: 70% !important;
+    border-radius: 25px !important;
+    border: 1px solid #012351 !important;
+    background-color: #ffffff;
+    color: #000000;
+    height: 39px;
+    width: 285 !important;
+}
+
+.btn-next {
+    position: static;
+    border-radius: 25px !important;
+    background-color: #012351;
+    color: #ffffff;
+    height: 39px;
+    width: 285 !important;
+}
+
+/* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 18px !important;
+    font-size: 14px;
+    
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+    border:1px solid rgba(0,0,0,.2);;
+    margin-left: -18px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .modal-size {
+      max-width:  625px !important;
+  }
+
+  .modal-label {
+    margin-top: 7px;
+  }
+  
+.modal {
+    overflow-y: auto !important;
+    
+}
+
+.icon-date {
+    width: 340% !important;
+    margin-top: 13px;
+}
+
+.input-date {
+    width: 148% !important;
+    margin-bottom: 4%;
+}
+
+.label-niscode {
+    margin-left: 26%;
+}
+
+.input-niscode {
+    width: 191% !important;
+    margin-bottom: 9%;
+}
