@@ -51,8 +51,8 @@ width: 33px;
     font-size: 20px;
     line-height: 1.65;
     border-radius: 21px !important;
-    position: fixed;
-    top: 10%;
+    position: absolute;
+    top: 12%;
     right: 2%;
 }
 
@@ -174,7 +174,7 @@ header {
     border: 4px;
     background: #edad2f;
     font-size: 14px;
-    width: 145px;
+    width: 128px;
     border-radius: 25px;
     box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.75);
     top: 9px;
